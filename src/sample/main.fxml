@@ -23,17 +23,17 @@
                <children>
                   <Label layoutX="14.0" layoutY="26.0" prefHeight="14.0" prefWidth="83.0" text="Schwierigkeit" />
                   <Slider fx:id="sliderLevel" layoutX="128.0" layoutY="13.0" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="0" prefHeight="64.0" prefWidth="62.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
-                  <Button fx:id="btnStart" layoutX="251.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: lightblue;" text="Start" />
+                  <Button fx:id="btnStart" layoutX="251.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#btnStartOnClick" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: lightblue;" text="Start" />
                </children>
             </Pane>
          </children>
       </VBox>
-      <GridPane alignment="center" gridLinesVisible="true" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: grey;" vgap="5.0">
+      <GridPane alignment="center" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: grey;" vgap="5.0">
          <children>
-            <Button fx:id="blue" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" text="Blau" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="red" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" text="Rot" />
-            <Button fx:id="green" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" text="Grün" GridPane.rowIndex="1" />
-            <Button fx:id="yellow" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" text="Gelb" GridPane.columnIndex="1" />
+            <Button fx:id="blue" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="red" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" />
+            <Button fx:id="green" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" GridPane.rowIndex="1" />
+            <Button fx:id="yellow" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: yellow;" GridPane.columnIndex="1" />
          </children>
          <rowConstraints>
             <RowConstraints />
