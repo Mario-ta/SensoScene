@@ -11,8 +11,7 @@ public class Controller {
 
     public void btnStartOnClick(MouseEvent mouseEvent) {
         System.out.println("Start geklickt");
-        sliderLevel.setId("slideLevel");
-        System.out.println("Level ist: "+sliderLevel.getValue());
+        System.out.println("Level ist: "+(int)sliderLevel.getValue());
         ConfigGame game = new ConfigGame((int)sliderLevel.getValue());
     }
 }
